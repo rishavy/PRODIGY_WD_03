@@ -63,10 +63,13 @@ body{
   grid-template-rows: repeat(3, 1fr);
   height: 250px;
   width: 250px;
-  margin: 30px auto;
+  margin: 30px 38%;
+  padding: 30px;
   border: 2px #252A34 ;
   background-color: #252A34;
-
+  align-items: center;
+  justify-content: center;
+  /* gap: 5px; */
 }
 
 .box{
@@ -128,4 +131,80 @@ body{
   padding: 10px 40px;
   background-color: #08D9D6;
   color: #000;
+}
+
+
+/* ----------------------------------- */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .main-grid {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+  }
+  .box {
+    padding: 10px;
+    font-size: 100px;
+  }
+  .turn-container {
+    width: 170px; 
+  }
+}
+
+/* -------------------------------- */
+
+@media only screen and (max-width: 575px) {
+  .main-grid {
+    width: 150px;
+    height: 300px;
+    margin: auto;
+  }
+  .box {
+    font-size: 50px;
+  }
+  .turn-container {
+    width: 170px; 
+  }
+}
+
+/* ---------------------------------- */
+
+@media only screen and (max-width: 414px) {
+  .main-grid {
+      width: 75%;
+      margin: auto;
+  }
+  .box {
+      font-size: 80px;
+  }
+}
+
+/* ------------------------------------------- */
+
+@media only screen and (max-width: 350px) {
+  .main-grid {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .box {
+    font-size: 80px; 
+  }
+  .turn-container {
+    width: 150px; 
+  }
+}
+
+/* -------------------------------------- */
+
+@media only screen and (max-width: 300px) {
+  .main-grid {
+    width: 80%;
+    margin: 10px auto;
+  }
+  .box {
+    font-size: 50px; 
+  }
+  .turn-container {
+    width: 170px;
+  }
 }
